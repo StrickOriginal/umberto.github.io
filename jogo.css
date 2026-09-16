@@ -1,0 +1,17 @@
+main{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.menu-navegacao {
+background-color: #d6d4d4;
+border: 1px solid #000000;
+}
+
+li a{ 
+    color:rgb(0, 25, 138)
+}
+li a:hover{
+    color: #03070a;
+    text-decoration: underline;
+}

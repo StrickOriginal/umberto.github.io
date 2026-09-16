@@ -1,0 +1,19 @@
+main{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+li a{ 
+    color:rgb(0, 25, 138)
+}
+li a:hover{
+    color: #03070a;
+    text-decoration: underline;
+}
+ul{ 
+   border: 1px solid #000000;
+}
+ul p{ 
+    color: #000000;
+    font-weight: bold;
+}
