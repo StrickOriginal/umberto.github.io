@@ -1,0 +1,29 @@
+main{
+  background-color: #ffffff;
+  border: 1px solid #85929e;
+  padding: 10px;
+}
+figcaption{
+    color: #000000;
+}
+
+/* Mobile first: fotos empilhadas por padrão */
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Em telas maiores, as 3 fotos ficam lado a lado */
+@media (min-width: 700px) {
+  .galeria {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .galeria figure {
+    width: 30%;
+  }
+}

@@ -1,0 +1,141 @@
+/* infoproduto.css - página de venda "Sem Trava"
+   Mobile first: o CSS sem media query é o layout do celular. */
+
+.hero-produto {
+  background-color: #5562d6;
+  color: #ffffff;
+  text-align: center;
+  padding: 6vh 4vw;
+}
+
+.hero-produto h1 {
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-size: 9vw;
+}
+
+.hero-produto .subtitulo {
+  margin: 0 0 20px 0;
+  font-size: 4vw;
+}
+
+.cta-botao {
+  display: inline-block;
+  background-color: #0a0533;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid #ffffff;
+}
+
+.cta-botao:hover {
+  background-color: #ffffff;
+  color: #0a0533;
+  border-color: #0a0533;
+}
+
+/* Mobile first: conteúdo e sidebar empilhados, sidebar depois do conteúdo */
+.layout-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conteudo-produto section {
+  background-color: #ffffff;
+  border: 1px solid #85929e;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.sidebar-produto {
+  background-color: #ffffff;
+  border: 2px solid #5562d6;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-produto .preco {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0a0533;
+  margin: 10px 0;
+}
+
+.sidebar-produto ul {
+  text-align: left;
+  margin-top: 15px;
+}
+
+/* Depoimentos: no celular mostra só o primeiro, pra não ficar um scroll enorme */
+.depoimentos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.depoimento {
+  background-color: #ffffff;
+  border-left: 4px solid #5562d6;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.depoimento em {
+  display: block;
+  margin-top: 8px;
+}
+
+/* no celular, os depoimentos extras ficam escondidos */
+.depoimento.extra {
+  display: none;
+}
+
+.pergunta {
+  margin-bottom: 15px;
+}
+
+.pergunta h4 {
+  margin-bottom: 4px;
+}
+
+/* A partir daqui, telas de computador: sidebar ao lado do conteúdo */
+@media (min-width: 850px) {
+  .hero-produto {
+    padding: 50px 20px;
+  }
+
+  .hero-produto h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-produto .subtitulo {
+    font-size: 1.1rem;
+  }
+
+  .layout-produto {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .conteudo-produto {
+    width: 70%;
+  }
+
+  .sidebar-produto {
+    width: 26%;
+  }
+
+  /* No desktop, os 3 depoimentos aparecem lado a lado */
+  .depoimentos-lista {
+    flex-direction: row;
+  }
+
+  .depoimento {
+    width: 30%;
+  }
+
+  .depoimento.extra {
+    display: block;
+  }
+}

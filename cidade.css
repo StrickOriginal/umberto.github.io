@@ -1,0 +1,50 @@
+main{
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+li a{ 
+    color:rgb(0, 25, 138)
+}
+li a:hover{
+    color: #03070a;
+    text-decoration: underline;
+}
+ul{
+   border: 1px solid #000000;
+}
+.mapa{
+   border: 0;
+}
+nav.menu-navegacao h3{
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Mobile first: texto e foto empilhados por padrão */
+.colunas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.colunas figure {
+  margin: 0;
+}
+
+/* Em telas maiores, texto e foto ficam lado a lado */
+@media (min-width: 700px) {
+  .colunas {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .colunas p {
+    width: 60%;
+  }
+
+  .colunas figure {
+    width: 35%;
+  }
+}
